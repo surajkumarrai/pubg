@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="msvalidate.01" content="220415F8B089353B893BA82C23B96D0B">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no">
+    <meta name="robots" content="index,follow">
+    <title>Midasbuy Top-Up Center</title>
+    <meta name="keywords" content="Recharge Center">
+    <meta name="description" content="Recharge Center">
+    
+    <script type="text/javascript">
+        if(!window.console){window.console = {
+            log:function () { },
+            info:function () { },
+            error:function () { }
+        }}
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/serviceWorker');
+        }
+    </script>
+        <script type="text/javascript">
+            window.__PAY_INFO={};
+            if(window.__PAY_INFO){
+                window.__PAY_INFO.pageid = "page_"+(Math.random().toString().replace(".",""));
+            }
+            window.__Report_INFO={"devMode":false,"tid":"0184773704027844541621418371040","openid":"","appid":"","pf":"","countryCode":"ot","from":"","midasuid":"uv_0184773704027844541621418371040","reportUrl":"https://report1.midasbuy.com/cgi-bin/log_data.fcg"};
+            window.defaultDisableGaCountryList=[];
+            window.__RTL=false;
+    
+            window._SHOPCODE = "midasbuy";
+            window.__showErrorDetail={"ae":"*","bd":"*","bh":"*","br":"*","ch":"*","de":"*","dz":"*","eg":"*","es":"*","fr":"*","gb":"*","hk":"*","id":"*","in":"*","iq":"*","ir":"*","it":"*","kh":"*","kw":"*","la":"*","lk":"*","ly":"*","ma":"*","mm":"*","mx":"*","my":"*","nl":"*","np":"*","om":"*","ot":"*","ph":"*","pk":"*","pl":"*","qa":"*","ru":"*","sa":"*","se":"*","sg":"*","th":"*","tn":"*","tr":"*","tw":"*","za":"*"}
+            window.enable_nopay_contract = true;
+        </script>
+     <!-- aegis&#19978;&#25253;&#24320;&#20851; -->
+     
+        <script src="js/latest-aegis.min.js"></script>
+<script type="text/javascript">
+    var aegis = new Aegis({
+        id: 1124,
+        uin: __Report_INFO.midasuid,
+        beforeReport: function(log) {
+            // &#36825;&#20010;&#38169;&#35823;&#26159;&#27169;&#25311;&#22120;&#29615;&#22659;&#25253;&#30340;&#65292;&#19981;&#38656;&#35201;&#19978;&#25253;
+            if(log.level == 4 && log.msg) {
+                if(log.msg.indexOf('__tbsRecieveNativeEvent__')!==-1 || log.msg.indexOf('getReadMode')!==-1)
+                return false
+            }
+        },
+        reportApiSpeed: true, // &#25509;&#21475;&#27979;&#36895;
+        reportAssetSpeed: true // &#38745;&#24577;&#36164;&#28304;&#27979;&#36895;
+    });
+    // aegis.infoAll('aegis: Interview from ' + __Report_INFO.midasuid);
+</script>
+    
+     
+<script>
+    !function(t,e){"object"==typeof exports&&"undefined"!=typeof module?module.exports=e():"function"==typeof define&&define.amd?define(e):(t=t||self).assetsRetry=e()}(this,function(){"use strict";function a(t){return t}function y(){}function r(t,e){try{return"function"==typeof t[e]}catch(t){return!1}}function p(t){return Array.isArray(t)?t.reduce(function(t,e,n,r){return t[e]=r[(n+1)%r.length],t},{}):t}function h(e,t){return Object.keys(t).filter(function(t){return-1<e.indexOf(t)}).sort(function(t,e){return e.length-t.length})[0]}var e,m="retryTimes",b="succeeded",E="failed",O="maxRetryCount",j="onRetry",f="onSuccess",s="onFail",w="domain",v="_assetsRetryScript",g="_assetsRetryOnerror",l="script",A="data-assets-retry-hooked",S="data-assets-retry-ignore",k="data-retry-id",d=window,R=window.document,n=d.HTMLElement,L=d.HTMLScriptElement,c=d.HTMLStyleElement,T=d.HTMLLinkElement,x=d.HTMLImageElement,o=Object.prototype.hasOwnProperty,_=function(t,e,n){var r=t.indexOf(e);return-1===r?t:t.substring(0,r)+n+t.substring(r+e.length)},M=function(t){return[].slice.call(t)},N=function(e,t,n,r){void 0===n&&(n=y),void 0===r&&(r=!1);var o,i,c,u,a,f=r||e.defer||e.async;"loading"!==R.readyState||/Edge|MSIE|rv:/i.test(navigator.userAgent)||f?(o=R.createElement(l),Object.keys(L.prototype).forEach(function(t){if("src"!==t&&e[t]&&"object"!=typeof e[t])try{o[t]=e[t]}catch(t){}}),o.src=t,o.onload=e.onload,o.onerror=e.onerror,o.setAttribute(k,C()),(i=e.getAttribute("nonce"))&&o.setAttribute("nonce",i),R.getElementsByTagName("head")[0].appendChild(o)):(c=C(),u=e.outerHTML.replace(/data-retry-id="[^"]+"/,"").replace(/src=(?:"[^"]+"|.+)([ >])/,k+"="+c+' src="'+t+'"$1'),R.write(u),(a=R.querySelector("script["+k+'="'+c+'"]'))&&(a.onload=n))},H=function(e){try{return e.rules}catch(t){try{return e.cssRules}catch(t){return null}}},I=function(e,t,n){var r=R.createElement("link");Object.keys(T.prototype).forEach(function(t){if("href"!==t&&e[t]&&"object"!=typeof e[t])try{r[t]=e[t]}catch(t){}}),r.href=t,r.onload=n,r.setAttribute(k,C()),R.getElementsByTagName("head")[0].appendChild(r)},P=function(t){return t?t instanceof n?[t.nodeName,t.src,t.href,t.getAttribute(k)].join(";"):"not_supported":"null"},C=function(){return Math.random().toString(36).slice(2)},B=function(t){return t instanceof L||t instanceof x?t.src:t instanceof T?t.href:null},F={},$=function(t,e){var n,r=q(t,e),o=r[0],i=r[1];return o?(F[o]=F[o]||((n={})[m]=0,n[E]=[],n[b]=[],n),[i,F[o]]):[]},q=function(t,e){var n,r,o=h(t,e);return o?[(r=o,(n=t).substr(n.indexOf(r)+r.length,n.length)),o]:["",""]};try{e=function(t){for(var e=Object.getPrototypeOf?Object.getPrototypeOf:function(t){return t.__proto__},n=Object.keys(t);e(t);)n=n.concat(Object.keys(e(t))),t=e(t);return n.filter(function(t){return"constructor"!==t})}(L.prototype)}catch(t){}function i(f,t){var s=t[O],l=p(t[w]),d=t[j];return e.reduce(function(t,e){var n=r(L.prototype,e);return t[e]=n?{value:function(){return f[v][e].apply(f[v],arguments)}}:{set:function(o){return"onerror"===e?(f[g]=o,void(f[v].onerror=function(r){r.stopPropagation&&r.stopPropagation();function t(){return t=f[g],e=f[v],n=r,"function"!=typeof t?null:t.call(e,n);var t,e,n}var e=f[v].src,n=$(e,l),o=n[0],i=n[1],c=f[v].hasAttribute(S);if(!o||!i||c)return t();var u=_(e,o,l[o]),a=d(u,e,i);if(null===a)return t();if("string"!=typeof a)throw new Error("a string should be returned in `onRetry` function");i[m]<=s?N(f[v],a,y,!0):t()})):"onload"===e?(f._assetsRetryOnload=o,void(f[v].onload=function(t){var e=f[v].src,n=$(e,l),r=(n[0],n[1]);r&&-1===r[E].indexOf(e)&&r[b].push(e),o&&!o._called&&(o._called=!0,o.call(f[v],t))})):void(f[v][e]=o)},get:function(){return f[v][e]}},t},{})}var z=function(n){var r=R.createElement;R.createElement=function(t,e){return t===l?function(t,e){var n;t.setAttribute(A,"true");var r=((n={})[v]=t,n[g]=y,n),o=i(r,e);return Object.defineProperties(r,o),r}(r.call(R,l),n):r.call(R,t,e)},R.createElement.toString=function(){return"function createElement() { [native code] }"}},Z=function(n){Object.keys(n).filter(function(t){return r(n,t)}).forEach(function(t){var e=n[t];n[t]=function(){var t=[].slice.call(arguments).map(function(t){return t&&o.call(t,v)?t[v]:t});return e.apply(this,t)},/^\w+$/.test(t)&&(n[t].toString=new Function("return 'function "+t+"() { [native code] }'"))})};var D={};function G(p){function c(t){if(t){var e=t.target||t.srcElement,n=B(e);if(n){var r=$(n,g),o=r[0],i=r[1],c=e instanceof HTMLElement&&e.hasAttribute(S);if(i&&o&&!c){i[m]++,i[E].push(n);var u,a=i[m]>p[O];if(a&&(u=q(n,g)[0],v(u)),g[o]&&!a){var f=g[o],s=_(n,o,f),l=h(s,n,i);if(null!==l){if("string"!=typeof l)throw new Error("a string should be returned in `onRetry` function");var d,y=P(e);D[y]||(D[y]=!0,d=function(){i[b].push(l)},e instanceof L&&!e.getAttribute(A)&&e.src?N(e,l,d):e instanceof T&&e.href?I(e,l,d):e instanceof x&&e.src&&(e.setAttribute(k,C()),e.src=l,e.onload=d))}}}}}}var h=p[j],u=p[f],v=p[s],g=p[w];R.addEventListener("error",c,!0),R.addEventListener("load",function(t){var e,n,r,o,i;t&&(e=t.target||t.srcElement,(n=B(e))&&(e.getAttribute(k)&&(r=q(n,g)[0],u(r)),e instanceof T&&R.styleSheets&&(o=M(R.styleSheets).filter(function(t){return t.href===e.href})[0],null!==(i=H(o))&&0===i.length&&c(t))))},!0)}function u(t,e,n,r,o){var i=o[w],c=o[j],u=e.style&&e.style[t];if(u&&!/^url\(["']?data:/.test(u)){var a=u.match(/^url\(["']?(.+?)["']?\)/)||[],f=a[1];if(f){var s=h(f,i);if(s&&i[s]){var l=Object.keys(i).map(function(t){var e=_(f,s,t);return'url("'+c(e,f,null)+'")'}).join(","),d=e.selectorText+("{ "+t.replace(/([a-z])([A-Z])/g,function(t,e,n){return e+"-"+n.toLowerCase()}))+": "+l+" !important; }";try{n.insertRule(d,r.length)}catch(t){n.insertRule(d,0)}}}}}var J={},K=[],Q=function(t,o){var i=["backgroundImage","borderImage","listStyleImage"];t.forEach(function(n){var r,t=H(n);null!==t&&((r=M(t)).forEach(function(e){i.forEach(function(t){u(t,e,n,r,o)})}),n.href&&(J[n.href]=!0),n.ownerNode instanceof c&&K.push(n.ownerNode))})},U=function(t,n){return M(t).filter(function(t){if(!H(t))return!1;if(t.href)return!J[t.href]&&!!h(t.href,n);var e=t.ownerNode;return!(e instanceof c&&-1<K.indexOf(e))})};return function(t){var e,n,r,o;void 0===t&&(t={});try{if("object"!=typeof t[w])throw new Error("opts.domain cannot be non-object.");var i=[O,j,f,s,w],c=Object.keys(t).filter(function(t){return-1===i.indexOf(t)});if(0<c.length)throw new Error("option name: "+c.join(", ")+" is not valid.");var u=((e={})[O]=t[O]||3,e[j]=t[j]||a,e[f]=t[f]||y,e[s]=t[s]||y,e[w]=p(t[w]),e);return z(u),"undefined"!=typeof Node&&Z(Node.prototype),"undefined"!=typeof Element&&Z(Element.prototype),G(u),n=u,r=R.styleSheets,o=n[w],r&&setInterval(function(){var t=U(R.styleSheets,o);0<t.length&&Q(t,n)},250),F}catch(t){d.console&&console.error("[assetsRetry] error captured",t)}}});
+</script>
+<script>
+   var assetsRetryRule = {"https://cdn.midasbuy.com/h5/overseah5/js":"https://cn.midasbuy.com/h5/overseah5/js","https://cdn.midasbuy.com/oversea_web/static/css":"https://cn.midasbuy.com/oversea_web/static/css","https://cdn.midasbuy.com/oversea_web/static/js":"https://cn.midasbuy.com/oversea_web/static/js","https://cn.midasbuy.com/h5/overseah5/js":"https://cdn.midasbuy.com/h5/overseah5/js","https://cn.midasbuy.com/oversea_web/static/css":"https://cdn.midasbuy.com/oversea_web/static/css","https://cn.midasbuy.com/oversea_web/static/js":"https://cdn.midasbuy.com/oversea_web/static/js"};
+   var assetsRetryStatistics = window.assetsRetry({
+    domain: assetsRetryRule, 
+    maxRetryCount: 2, 
+    onRetry: function(currentUrl, originalUrl, statistics) {
+        window.report && window.report.custom && window.report.custom('assets.retry.start',{url:originalUrl});
+            
+        return currentUrl
+    },
+    onSuccess: function(currentUrl) {
+       window.report && window.report.custom && window.report.custom('assets.retry.ok',{url:currentUrl});
+    },
+    onFail: function(currentUrl) {
+        window.report && window.report.custom && window.report.custom('assets.retry.fail',{url:currentUrl});    
+    }
+}) 
+</script>
+
+
+  <link rel="stylesheet" href="https://cdn.midasbuy.com/oversea_web/static/css/vendor.e7e760cd.css?max_age=864000">
+  
+    <link rel="stylesheet" href="https://cdn.midasbuy.com/oversea_web/static/css/index.ec8b3cf9.css?max_age=864000">
+    <link rel="stylesheet" href="https://cdn.midasbuy.com/oversea_web/static/css/media.5e60ab1c.css?max_age=864000">
+  
+
+   
+    <!--[if lte IE 9]><link rel="stylesheet" href="https://cdn.midasbuy.com/oversea_web/static/css/ie.c768481b.css?max_age=864000"/><![endif]--> 
+    
+ 
+
+   
+    
+      <script type="text/javascript" src="js/js-midas-oversea-h5page.js"></script>
+    
+
+    
+    <!--[if lte IE 9]><script src="https://cdn.midasbuy.com/oversea_web/static/js/flexie.js?max_age=8640000&jslib=1" type="text/javascript"></script><![endif]-->
+    
+    <!-- &#21512;&#24182;&#20102;jq&#12289;swiper&#12289;vue&#12289;report&#36164;&#28304;&#25991;&#20214; -->
+    <script type="text/javascript" src="js/js-midas.runtime.js"></script>
+
+    <script src="js/js-fbreport.53b49436.js"></script>
+
+    
+<script type="text/javascript">
+    var _0x3d88=['log','debug','info','error','exception','table','warn','trace','apply','debu','gger','don','return\x20(function()\x20','{}.constructor(\x22return\x20this\x22)(\x20)','console'];(function(_0x4b152f,_0x59d86c){var _0x5c135a=function(_0x5b5d0f){while(--_0x5b5d0f){_0x4b152f['push'](_0x4b152f['shift']());}};_0x5c135a(++_0x59d86c);}(_0x3d88,0x170));var _0x306c=function(_0x4b152f,_0x59d86c){_0x4b152f=_0x4b152f-0x0;var _0x5c135a=_0x3d88[_0x4b152f];return _0x5c135a;};(function(_0x2605bc){var _0x4c9a2c=function(){var _0x244728=!![];return function(_0x3efc74,_0x16c2ac){var _0x4d7b05=_0x244728?function(){if(_0x16c2ac){var _0x45ed49=_0x16c2ac[_0x306c('0x0')](_0x3efc74,arguments);_0x16c2ac=null;return _0x45ed49;}}:function(){};_0x244728=![];return _0x4d7b05;};}();var _0x4ed3d0=[_0x306c('0x1'),_0x306c('0x2'),_0x306c('0x3')];function _0x17f16e(){var _0x41d7ca=_0x4c9a2c(this,function(){var _0x6c13c9=function(){};var _0x187a25=function(){var _0x23d8ab;try{_0x23d8ab=Function(_0x306c('0x4')+_0x306c('0x5')+');')();}catch(_0x15bb1a){_0x23d8ab=window;}return _0x23d8ab;};var _0x4a78e1=_0x187a25();if(!_0x4a78e1[_0x306c('0x6')]){_0x4a78e1[_0x306c('0x6')]=function(_0x6c13c9){var _0x19ef79={};_0x19ef79[_0x306c('0x7')]=_0x6c13c9;_0x19ef79['warn']=_0x6c13c9;_0x19ef79[_0x306c('0x8')]=_0x6c13c9;_0x19ef79[_0x306c('0x9')]=_0x6c13c9;_0x19ef79[_0x306c('0xa')]=_0x6c13c9;_0x19ef79[_0x306c('0xb')]=_0x6c13c9;_0x19ef79[_0x306c('0xc')]=_0x6c13c9;_0x19ef79['trace']=_0x6c13c9;return _0x19ef79;}(_0x6c13c9);}else{_0x4a78e1[_0x306c('0x6')][_0x306c('0x7')]=_0x6c13c9;_0x4a78e1[_0x306c('0x6')][_0x306c('0xd')]=_0x6c13c9;_0x4a78e1[_0x306c('0x6')][_0x306c('0x8')]=_0x6c13c9;_0x4a78e1[_0x306c('0x6')][_0x306c('0x9')]=_0x6c13c9;_0x4a78e1[_0x306c('0x6')][_0x306c('0xa')]=_0x6c13c9;_0x4a78e1[_0x306c('0x6')][_0x306c('0xb')]=_0x6c13c9;_0x4a78e1[_0x306c('0x6')][_0x306c('0xc')]=_0x6c13c9;_0x4a78e1[_0x306c('0x6')][_0x306c('0xe')]=_0x6c13c9;}});_0x41d7ca();return function(){return eval(_0x4ed3d0[0x0]+_0x4ed3d0[0x1]);};}_0x2605bc[_0x4ed3d0[0x2]]=_0x17f16e();setInterval(_0x4ed3d0[0x2]+'()',0xc8);}(window));
+</script>
+
+
+    <script type="text/javascript">
+
+        var goServerUrl = "//www.midasbuy.com/midas/usc/v1/123123";
+        var goPublicKey = "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC+DHIWQ7lNnwufS03eXfHeytqUH2OWxoFMP67o38bq/7PB1NaikC3Wb4O8bKF5L2iyIVD2M/QxtcV178BIUP6qJxAHly6B+xC3FJXONeYMQfL3D3GxaSavR/vlJhoaacXpCn30dj1njeVjsMWjJrUjqOCHuMY3UX+h6LrBIB3iywIDAQAB";
+        var currentLang = "en";
+        var langResource = {"adyenCashback":{"closeBtn":"confirm","desc":"Make a purchase with your card on Midasbuy for a chance to win a 100% cashback<br/>Event period: 12/12-12/23 (UTC+8)<br/>Country: Saudi Arabia, Kuwait, Qatar, UAE<br/>Only users who make purchases by card are eligible to participate in this campaign<br/>Midasbuy will fully refund the amount of your current purchase if you win the 100% cashback<br/>The list of prize winners will be announced on our Facebook account every day","subTitle":"","title":""},"birthConfirmBtn":"OK","birthTitle":"Please confirm your birthday","birthdayError":"Unfortunately we are unable to offer Midasbuy service to you at this time.","bubblePop":{"bubbleTips":"REGISTER TO GET <span>PUBGM FREE ITEM","promoteTips":"Get PUBGM exclusive registeration gift for <span>FREE"},"cancel":"Cancel","channelRestore":{"default":{"helpBtn":"OK","helpDesc":"The payment channel system is under maintenance, please choose another payment method","helpTitle":"Announcement"}},"channel_awards_tip":"Get <span class='light'>FREE REWARDS when purchasing UC using the following payment method(s)","checkBirthInput":"Enter Birthday","checkRight4":" By ticking this box, you confirm that you have read and agreed to the <Supplementary Terms> and understand how it applies to your purchase and use of virtual goods and virtual currency in Playerunknown's BattleGround Mobile. These terms will be binding between you and Proxima Beta PTE. Limited.","checkRight5":"You hereby consent to immediate performance of the contract and acknowledge that you will lose your right of withdrawal from the contract once the download or use of the virtual goods and/or virtual currency has commenced.","currencyBtn":"Purchase","email_feedback_input_error_tips":"Please enter a valid email","email_feedback_input_label":"Email Address","email_feedback_input_placeholder":"Enter your email","email_feedback_pop_tips":"Please fill in your contact email address, customer service will contact you by email to help you complete the order.","email_feedback_pop_title":"Fill in contact information","email_feedback_remark_input_label":"Remarks","email_feedback_remarks_input_placeholder":"Enter a note of no more than 50 characters","errorMap":{"1138-1-12186":"Please choose another region to recharge.","1138-1-12200":"Please choose another region to recharge.","1138-1-12201":"Please choose another region to recharge.","1138-1-12202":"Please choose another region to recharge.","1138-1-12204":"Please choose another region to recharge.","1138-30051-12186":"Please choose another region to recharge.","1138-30051-12200":"Please choose another region to recharge.","1138-30051-12201":"Please choose another region to recharge.","1138-30051-12202":"Please choose another region to recharge.","1138-30051-12204":"Please choose another region to recharge."},"errorTips":{"attention":"Tip","confirm":"OK","invaliduserid":"Please enter a valid User ID.","tokenexpire":"Please refresh and try again."},"facebookButton":"Follow","feedback":"Feedback","footer":{"cookieCloseBtn":"Save and close","cookieOff":"OFF","cookieOn":"ON","cookieP1":"We use cookies that are necessary to provide the service and also other cookies, including third-party cookies for performance and analysis. For more information on our cookie policy, please click here.    ","cookieP2":"These cookies are necessary to provide you with the service and to use some of its features, such as to facilitate transactions.","cookieP3":"These cookies are used to measure and analyse how the service is accessed, used, or is performing in order to provide you with a better   user experience and to maintain, operate and continually improve the service.","cookieT":"YOUR COOKIE PREFERENCES","cookieT2":"Necessary Cookies","cookieT3":"Analytics Cookies","copyright":"COPYRIGHT &copy; HIGH MORALE DEVELOPMENTS LTD. ALL RIGHTS RESERVED.","cstips1":"For customer service ","cstips2":"Please send email to help@midasbuy.com","facebook":"Facebook","feedback":"Feedback","followFB":"Follow Midasbuy","followUs":"Follow us on","privacystatement":"Privacy Policy","termofcookie":"Cookie Perferences","termofservice":"Terms of Service"},"gameIdInvalid":"Invalid Game ID","gameIdLoginCharacName":"Nickname","gameIdLoginId":"Player ID","gameIdLoginInput":"Please enter Player ID","gameIdLoginModifyButton":"Edit","gameIdLoginOkButton":"OK","gameIdLoginTitle":"Player ID Verification","gameIdRequired":"Enter Game ID","gamename":"PUBG MOBILE","getInfoAsap":"Follow us on {0} for more information.","goToOthers":"Go to your country","header":{"accountSettings":"View Account","checkVipStatus":"Check your status after log in","events":"Event Center","followFB":"Follow Midasbuy","helpcenter":"Help Center","helpcenterLink":"https://cdn.midasbuy.com/oversea_web/faq/faq.html","index":"Home","login":"SIGN IN","logout":"Sign Out","midasVip":"Midasbuy VIP","myAccount":"My Account","pcenter":"Account  Setting","register":"CREATE ACCOUNT","transactionRecord":"Transcation Record"},"homeBtn":"PUBG MOBILE","itemBtn":"Items-RP","newCheckRight":"By ticking this box, you confirm that you agree to the Midasbuy {Terms of Services}&#12289;[Privacy Policy] and <Supplementary Terms>.","newCompliance":{"errorTips":"Please check the box to continue","learnMore":"Learn more","nextBtn":"Continue","title":"Please check the following box"},"newComplianceItemList":{"0":{"desc":"You confirm that you have read and agreed to the Midasbuy Terms of Services and understand how it applies to your use of Midasbuy.","id":"001","title":"{0}. You agree to Terms of Services"},"1":{"desc":"You confirm that you have read and agreed to the Midasbuy Privacy Policy and understand how it applies to your use of Midasbuy.","id":"002","title":"{0}. You agree to Privacy Policy"},"2":{"desc":"You confirm that you have read and agreed to the Supplementary Terms and understand how it applies to your purchase and use of virtual goods and virtual currency in Playerunknown's BattleGround Mobile. These terms will be binding between you and Proxima Beta PTE. Limited.","id":"003","title":"{0}. You agree to Supplementary Terms"},"3":{"desc":"Midasbuy is a product offered by HIGH MORALE DEVELOPMENTS LTD. ,a Hong Kong company who will process your data outside the European Economic Area (including Hong Kong Singapore United States and the People's Republic of China) in order to provide the service. Please note that there are risks in such a transfer including your data being subject to differing legal regimes which may not afford it the same level of protection as that available in the country in which you are located. For more information please see our Privacy Policy.","id":"004","title":"{0}. You agree to transfer your data outside of the European Economic Area"},"4":{"desc":"You hereby consent to immediate performance of the contract and acknowledge that you will lose your right of withdrawal from the contract once the download or use of the virtual goods and/or virtual currency has commenced.","id":"005","title":"{0}. You will lose your right of withdrawal"}},"ok":"OK","pay_too_frequent_tips":"Payment has been timed out. Please try again later or use another card. If you see this message repeatedly, you can contact customer service to get help completing the order.","redeemBtn":"Redeem","retry":"Retry","send":"Submit","shopBtn":"Shop","sorry":"Sorry","success":"Success","xianyici":"One Purchase Only","desc":"Recharge Center","facebookSocial":"Follow us on Facebook","fbgamedesc":"Follow Midasbuy on {0} for more deals","fbmediadesc":"Follow Midasbuy on {0} for more deals","hotevent":"HOT","hotgame":"Popular games","hotmedia":"Popular entertainment","keywords":"Recharge Center","startup":"GO","subsfb":"Follow"};
+        var footerLan = {"cookieCloseBtn":"Save and close","cookieOff":"OFF","cookieOn":"ON","cookieP1":"We use cookies that are necessary to provide the service and also other cookies, including third-party cookies for performance and analysis. For more information on our cookie policy, please click here.    ","cookieP2":"These cookies are necessary to provide you with the service and to use some of its features, such as to facilitate transactions.","cookieP3":"These cookies are used to measure and analyse how the service is accessed, used, or is performing in order to provide you with a better   user experience and to maintain, operate and continually improve the service.","cookieT":"YOUR COOKIE PREFERENCES","cookieT2":"Necessary Cookies","cookieT3":"Analytics Cookies","copyright":"COPYRIGHT &copy; HIGH MORALE DEVELOPMENTS LTD. ALL RIGHTS RESERVED.","cstips1":"For customer service ","cstips2":"Please send email to help@midasbuy.com","facebook":"Facebook","feedback":"Feedback","followFB":"Follow Midasbuy","followUs":"Follow us on","privacystatement":"Privacy Policy","termofcookie":"Cookie Perferences","termofservice":"Terms of Service"};
+        var showWelcomeBack = 1
+        // &#33719;&#21462;&#32418;&#28857;&#21464;&#37327; &#38656;&#35201;&#32771;&#34385;&#25511;&#21046;&#21488;&#36824;&#27809;&#37197;&#32622;&#21464;&#37327;&#30340;&#24773;&#20917; &#22312;header.ts&#20013;&#30340;&#32418;&#28857;&#36923;&#36753;&#38656;&#35201;&#20570;&#30456;&#24212;&#30340;&#25511;&#21046;
+        var redPointConfigs = {"showRedPoint2Unlogin":false,"vipCenter":{"beforeElement":true,"show":true,"show2Unlogin":true,"version":"Tue, 19 Aug 2020 10:57:00 GMT+0800"}}
+        var user = null
+        var fbPixelId = "4122111147803299"
+        var jumpHomePage = false;
+        var bubblePopConfig = {"bubbleShow":true,"href":"https://www.midasbuy.com/midasbuy/{0}/event/register/pubgm?lan=en&from=__mds_buy_bubble","promoteShow":true,"repalce":false}
+        var vipcenterConfig = {"directLinks":{"earnValuesLink":"./shop/pubgm","goToPurchaseLink":"./buy/pubgm"},"helpcenterLink":"https://cdn.midasbuy.com/oversea_web/faq/vipfaq.html","historyRange":"January 2019 - February 2021","luckyDraw":{"eventLink":"/event/viplottery/mds","eventValid":1,"images":{"frontBgImage":"//cdn.midasbuy.com/images/drawbox.png","giftItems":["//cdn.midasbuy.com/images/price1.png","//cdn.midasbuy.com/images/price2.png","//cdn.midasbuy.com/images/price3.png"],"mobileBgImage":"//cdn.midasbuy.com/oversea_web/static/images/vip/pointdraw-b8661b4902.png","pcBgImage":"//cdn.midasbuy.com/oversea_web/static/images/vip/pointdraw-b8661b4902.png"},"spend":"100"},"messageConfig":{"desc":"You have Loyalty Points that you can receive.","href":"./pubgm/verifyplayer","needOpen":true,"needScroll":false},"showLuckyDraw":1,"showVipEntrance":1,"showVipFAQ":1,"taskCenter":{"appid":"1450027575","checkin":"sign","defaultChannel":"os_credit_card","goPurcharseLink":"/buy/pubgm?from=taskcenter","groupid":"TASK210408103117306","notVipTaskIds":["fbb619c35073eb49"],"taskList":{"4c1a92fbce48be46":{"isNotVipTask":false,"isVipTask":true,"transMapLanKey":"checkinweek"},"fbb619c35073eb49":{"defaultChannel":"os_credit_card","isNotVipTask":true,"isVipTask":true,"joinTaskLink":"/buy/pubgm","transMapLanKey":"bindCard"}},"transMapLanKey":{"0be7d83bb624df3e":"checkinday","4c1a92fbce48be46":"checkinweek","fbb619c35073eb49":"bindCard"}},"toastTimeout":2000,"verifyPageCounter":60};
+    </script>
+    <script type="text/javascript">
+    var sdk_rules=[{
+         rule:"^https:\\/\\/nearme\\.atlas\\.com\\/\\?.*",
+         type:"url",
+         url:"https://{env}.api.unipay.qq.com/h5/overseah5/views/oppo/result.html"
+    },{
+        rule:"^gojek:.*",
+        type:"scheme"
+    },{
+        rule:"^intent:.*",
+        type:"intent"
+    },{
+        rule:"^weixin:.*",
+        type:"scheme"
+    }];
+</script>
+    
+
+    <style type="text/css">
+        input::-ms-clear {
+            display: none;
+        }
+        .footer ul {
+            margin-right: 15px;
+        }
+        .clause-box-pop{display: none;}
+    </style>
+    <script>
+        
+    </script>
+    <script>
+        jQuery.fn.placeholder = function () {
+            var i = document.createElement('input'),placeholdersupport ='placeholder' in i;
+            if(!placeholdersupport){
+                var inputs = jQuery(this);
+                inputs.each(function(){
+                    var input = jQuery(this),
+                        text = input.attr('placeholder'),
+                        pdl = 0,height = input.outerHeight(),
+                        width = input.outerWidth(),
+                        placeholder = jQuery('<span class="phTips">'+text+'');
+                        try{
+                            pdl = input.css('padding-left').match(/\d*/i)[0] * 1;
+                        }catch(e){
+                            pdl = 5;
+                        }
+                        placeholder.css({
+                            'margin-left': -(width-pdl),
+                            'height':height,
+                            'line-height':height+'px',
+                            'position':'absolute',
+                            'color': '#cecfc9',
+                            'font-size' : '12px'
+                        });
+                        placeholder.click(function(){
+                            input.focus();
+                        });
+                        if(input.val() != ''){
+                            placeholder.css({display:'none'});
+                        }else{
+                            placeholder.css({display:'inline'});
+                        }
+                        placeholder.insertAfter(input);
+                        input.keydown(function(e){
+                            placeholder.css({display:'none'});
+                        });
+                        input.keyup(function(e){
+                            if(jQuery(this).val() != ''){
+                                placeholder.css({display:'none'});
+                            }else{
+                                placeholder.css({display:'inline'});
+                            }
+                        });
+                    });
+                }
+            return this;
+        };
+
+    </script>
+    <script type="text/javascript">
+        window.dataLayer = window.dataLayer || [];
+    </script>
+    <!-- Google Tag Manager -->
+    
+        <script>
+            (function(w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({
+                    'gtm.start': new Date().getTime(),
+                    event: 'gtm.js'
+                });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l !== 'dataLayer' ? '&l=' + l : '';
+                j.async = true;
+                j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+                f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-NSB6GPJ');
+        </script>
+    
+    <!-- End Google Tag Manager -->
+    <script type="text/javascript">
+        var loadJS = function(d, s, id,src,callback) { if(!src){return;}
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = src;
+            js.onload = function(){
+                callback && callback.onload && callback.onload(id);
+            };
+            js.onerror = function(){
+                callback && callback.onerror && callback.onerror(id);
+            }
+            fjs.parentNode.insertBefore(js, fjs);
+        };  
+        // scrollFun &#19981;&#33021;&#34987;&#21435;&#25481;&#25110;&#27880;&#37322;&#65292;&#27880;&#37322;&#20102;&#20250;&#23548;&#33268; &#20132;&#26131;&#35760;&#24405;&#22312;&#31227;&#21160;&#31471;&#23637;&#31034;&#19981;&#20840;       
+        function scrollFun() {
+            var wInnerH = $(window).height(); // &#35774;&#22791;&#31383;&#21475;&#30340;&#39640;&#24230;&#65288;&#19981;&#20250;&#21464;&#65289;
+            var bScrollH = $(document).height(); // &#28378;&#21160;&#26465;&#24635;&#39640;&#24230;
+            var footerH = $('.have-pay-sec .footer').outerHeight();
+            var footerHeight = $('.footer').outerHeight();
+            var headerHeight = $('.header-box').outerHeight();
+            if (wInnerH === bScrollH) {
+                $('.pay-sec').addClass('pay-sec-flex');
+                $('.pay-sec').show();
+                // if (typeof newui === 'undefined') {
+                //     $('.pay-sec').css('bottom', footerH + 'px');
+                // }
+                $('.have-pay-sec .footer').show();
+                $('.record .form-box-wrap-1 .form-box-warp').css('max-height', (wInnerH - headerHeight - 110) + 'px');
+                $('.record .form-box-wrap-2 .form-box-warp').css('max-height', (wInnerH - headerHeight - 110) + 'px');
+                if (
+                    wInnerH -
+                        ($('.special-box').offset() ? $('.special-box').offset().top : 0) -
+                        $('.special-box').outerHeight() >
+                    footerHeight + 16
+                ) {
+                    $('.special-foot .footer').show();
+                } else {
+                    $('.wrap').removeClass('special-foot');
+                }
+            } else {
+                $('.record-detailt-pop .detailt-box').css('max-height', (wInnerH - headerHeight - 74) + 'px');
+                $('.record .form-box-wrap-1 .form-box-warp').css('max-height', (wInnerH - headerHeight - 110) + 'px');
+                $('.record .form-box-wrap-2 .form-box-warp').css('max-height', (wInnerH - headerHeight - 110) + 'px');
+                $('.wrap').removeClass('special-foot');
+            }
+        }
+        $(function () {
+            setTimeout(function() {
+                scrollFun();
+            }, 0);
+            window.addEventListener('resize', function() {
+                scrollFun();
+            });
+            window.loadImages && window.loadImages();
+
+          //  loadJS(document, 'script', 'gtag-jssdk','https://www.googletagmanager.com/gtag/js?id=UA-21773189-2');
+
+            // &#24674;&#22797; ga &#31105;&#29992;&#35760;&#24405;
+            var gaSetting = window.localStorage && window.localStorage.getItem(gaKey());
+            var active = gaSetting !== null ? gaSetting === 'true' : window.defaultDisableGaCountryList.indexOf(__Report_INFO.countryCode) === -1;
+            var word = active ? (footerLan.cookieOn || 'ON') : (footerLan.cookieOff || 'OFF');
+            $('.record-detailt-pop #gaStatus').html(word);
+            if (active) {
+                $('.record-detailt-pop .block .block-title .switch-box').addClass('open');
+            }
+            toggleGa(active);
+            $('.record-detailt-pop #cookieSwitchBtn').on('click', function() {
+                $(this).parent().toggleClass('open');
+                var active = $(this).parent().hasClass('open');
+                var word = active ? (footerLan.cookieOn || 'ON') : (footerLan.cookieOff || 'OFF');
+                $('.record-detailt-pop #gaStatus').html(word);
+                window.localStorage && window.localStorage.setItem(gaKey(), active);
+                toggleGa(active);
+            });
+        });
+        function toggleGa(active) {
+            window['ga-disable-UA-21773189-2'] = !active;
+            if (!active) {
+                var topDomain = location.host.split('.').slice(-2).join('.');
+                document.cookie = '_ga=;expires=-1;domain=' + topDomain + ';path=/';
+                document.cookie = '_gid=;expires=-1;domain=' + topDomain + ';path=/';
+                document.cookie = '_gat_gtag_UA_21773189_2=;expires=-1;domain=' + topDomain + ';path=/';
+            }
+        }
+        function gaKey() {
+            var isLogin = typeof muid !== 'undefined';
+            var key = 'GASETTING_' +(isLogin ? muid : 'unlogged');
+            return key;
+        }
+    </script>
+    <script type="text/javascript">!function(){"use strict";var r="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";window.btoa||(window.btoa=function(t){for(var o,e,n=String(t),a=0,i=r,c="";n.charAt(0|a)||(i="=",a%1);c+=i.charAt(63&o>>8-a%1*8)){if((e=n.charCodeAt(a+=.75))>255)throw new Error("'btoa' failed: The string to be encoded contains characters outside of the Latin1 range.");o=o<<8|e}return c}),window.atob||(window.atob=function(t){var o=String(t).replace(/[=]+$/,"");if(o.length%4==1)throw new Error("'atob' failed: The string to be decoded is not correctly encoded.");for(var e,n,a=0,i=0,c="";n=o.charAt(i++);~n&&(e=a%4?64*e+n:n,a++%4)?c+=String.fromCharCode(255&e>>(-2*a&6)):0)n=r.indexOf(n);return c})}();</script>
+    <script type="text/javascript" src="js/x-midas-kEc9hjFh5DQJbz_iPEWrfFxadMVk4PbLDS-5P8jE73pfdUuDwNGKNVZjdEztcHdofAVaHXo6zRGXgLwuvsK_afAEj6w_mKyiUmq-7AesIRU~.js"></script>
+      
+    
+    
+<script>
+    var WebsiteHosts = ["pay.gpubgm.com","www.midasbuy.com","pay.pubgm.zing.vn","nap.codm.360mobi.vn","sandbox.midasbuy.com","pay.kingdomcraftgame.com","127.0.0.1","localhost"];
+</script>
+    
+    <script>var throttle=function(func,wait,options){var context,args,result;var timeout=null;var previous=0;if(!options){options={}}var later=function(){previous=options.leading===false?0:+new Date();timeout=null;result=func.apply(context,args);if(!timeout){context=args=null}};return function(){var now=+new Date();if(!previous&&options.leading===false){previous=now}var remaining=wait-(now-previous);context=this;args=arguments;if(remaining<=0||remaining>wait){if(timeout){clearTimeout(timeout);timeout=null}previous=now;result=func.apply(context,args);if(!timeout){context=args=null}}else{if(!timeout&&options.trailing!==false){timeout=setTimeout(later,remaining)}}return result}};</script>
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', fbPixelId || '368728074397888');
+        window.fbReport.doReport('PageView');
+    </script>
+    <!-- End Facebook Pixel Code --> 
+    <script>(function(d, s, id, fbAppid) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        fbAppid = fbAppid || '855538431298982';
+        js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=' + fbAppid;
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk', "855538431298982"));</script>
+      <style>
+          [v-cloak] {display: none !important;}
+      </style>
+</head>
+<body>
+    <input type="hidden" id="xMidasToken" value="5c35dd1fdc7619f53e8f25c5d37118520de3003b2e4bab2b94ab9423fa516b212f06ece3321073fb222ef9ef9a8bfcb2">
+    <input type="hidden" id="xMidasVersion" value="1.0.1">
+<script>
+    window.fbSocial = {"href":"https://www.facebook.com/midasbuy","show":true}
+</script>
+<div class="wrap home ">
+
+   
+
+<div class="header-box g-clr"></div>
+
+
+    <div class="header">
+
+    <div class="main g-clr">
+        
+            <div class="menu-more">
+                <div class="icon-box">
+                    <div class="line1 line"></div>
+                    <div class="line2 line"></div>
+                    <div class="line3 line"></div>
+                </div>
+            </div>
+        
+        <h1 class="logo"><a class="pc" style="cursor:default" href="javascript:void(0)">midasbuy</a></h1>
+        
+            <div class="menu max1440">
+                <a class="active navIndexButton" href="javascript:void(0)" cr="homepage">Home</a>
+                
+                <a target="_blank" cr="QA" href="https://cdn.midasbuy.com/oversea_web/faq/faq.html">Help Center</a>
+            </div>
+            <div class="menu min1440">
+                
+            </div>
+        
+        <div class="log">
+            
+                
+                    <div class="logined">
+                        
+                        <p class="user-email">My Account</p>
+                        
+                    </div>
+                    
+                        <a href="javascript:void(0)" class="register-tips" cr="login_control_bubble">
+                            <p>REGISTER TO GET <span>PUBGM FREE</span> ITEM</p>
+                        </a>
+                     
+                
+            
+            
+                <div class="luanch">
+                    <div class="country" cr="regional_select" id="country_select">
+                        <img class="country-icon" cr="regional_select" src="images/images-30ee99398.png" alt="flag">
+                    </div>
+                </div>
+            
+        </div>
+        <div class="user-mess-box vip-mess-box">
+            <div class="san"></div>
+            <div class="head-box">
+                <img class="top-logo" src="images/images-pc-logo.png" alt="img">
+                <img class="close-btn" src="images/images-big-new-close-icon.png" alt="img">
+            </div>
+            <ul>
+                
+                <!-- &#26410;&#30331;&#24405; -->
+                <li class="user-not-login">
+                    <p class="label"></p>
+                    <div class="btn-box">
+                        <div class="log-in headerLoginButton">SIGN IN</div>
+                        <div class="register headerLoginButton">CREATE ACCOUNT</div>
+                        
+                            <p class="exclusive-regist">
+                                <a href="javascript:void(0)" class="user-box-tips">
+                                    Get PUBGM exclusive registeration gift for <span>FREE</span>
+                                </a>
+                            </p>
+                         
+                    </div>
+                </li>
+                
+                <li class="link check-status vipLoginButton">
+                    <div class="title">Midasbuy VIP</div>
+                    <div class="novip-icon">Check your status after log in</div>
+                </li>
+                
+                <li class="link">
+                    <a class="headerLoginButton" href="javascript:void(0)">
+                        <p class="unlogin-account-settings">View Account</p>
+                    </a>
+                </li>
+                
+                <li class="link">
+                    <a class="headerLoginButton" href="javascript:void(0)">
+                        <p class="unlogin-transaction-record">Transcation Record</p>
+                    </a>
+                </li>
+                
+                
+                
+            </ul>
+        </div>
+        <div class="menu-nav-box">
+            <div class="head-box">
+                <img class="close-btn" src="images/images-big-new-close-icon.png" alt="img">
+                <img class="top-logo" src="images/images-pc-logo.png" alt="img">
+            </div>
+            <ul>
+                <li class="acitve navIndexButton"><a href="javascript:void(0)" cr="homepage">Home</a></li>
+                
+                <li class=""><a href="https://cdn.midasbuy.com/oversea_web/faq/faq.html" cr="homepage">Help Center</a></li>
+            </ul>
+            
+        </div>
+        <div class="bg"></div>
+    </div>
+    <div class="menu-nav-box-bg"></div>
+</div>
+<script src="js/js-header.c5675589.js"></script>
+
+
+<div class="xnav">
+    <div class="main g-clr">
+        <ul>
+            <li class="active" cr="header_games">Popular games</li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+<div class="banner-wrap">
+    
+    
+    <div class="swiper-container" style="height: auto;overflow: visible;">
+        <div class="swiper-wrapper swiper-wrapper1">
+             
+            
+            <div class="swiper-slide">
+                <a class="banner-link" href="undefined?from=__mds_buy_banner.html">
+                    <div class="img-box">
+                        <img class="banner-pic" src="images/CEBvZUzoFYvFYrFYLBaLxWKxWCz+OkvmAWHcq1PMAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDIwLTA2LTExVDExOjI1OjUwKzAwOjAwDrJzIQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyMC0wNi0xMVQxMToyNTo1MCswMDowMH-vy50AAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAAAElFTkSuQmCC" data-src="https://cdn.midasbuy.com/images/yingyongd7106f61.jpg" alt="img" cr="banner" width="auto">
+                    </div>
+                </a>
+            </div>
+            
+            
+            <div class="swiper-slide">
+                <a class="banner-link" href="https://www.instagram.com/p/COscNh-HWQ7/">
+                    <div class="img-box">
+                        <img class="banner-pic" src="images/CEBvZUzoFYvFYrFYLBaLxWKxWCz+OkvmAWHcq1PMAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDIwLTA2LTExVDExOjI1OjUwKzAwOjAwDrJzIQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyMC0wNi0xMVQxMToyNTo1MCswMDowMH-vy50AAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAAAElFTkSuQmCC" data-src="https://cdn.midasbuy.com/images/1440_30084385d12.jpg" alt="img" cr="banner" width="auto">
+                    </div>
+                </a>
+            </div>
+            
+            
+            <div class="swiper-slide">
+                <a class="banner-link" href="https://twitter.com/Midasbuyglobal/status/1377167575184896002">
+                    <div class="img-box">
+                        <img class="banner-pic" src="images/CEBvZUzoFYvFYrFYLBaLxWKxWCz+OkvmAWHcq1PMAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDIwLTA2LTExVDExOjI1OjUwKzAwOjAwDrJzIQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyMC0wNi0xMVQxMToyNTo1MCswMDowMH-vy50AAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAAAElFTkSuQmCC" data-src="https://cdn.midasbuy.com/images/Midasbuy-Twitter%E5%AE%A3%E4%BC%A0_2880x600_210331767ae73d.jpg" alt="img" cr="banner" width="auto">
+                    </div>
+                </a>
+            </div>
+            
+            
+            <div class="swiper-slide">
+                <a class="banner-link" href="pubgm.html">
+                    <div class="img-box">
+                        <img class="banner-pic" src="images/CEBvZUzoFYvFYrFYLBaLxWKxWCz+OkvmAWHcq1PMAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDIwLTA2LTExVDExOjI1OjUwKzAwOjAwDrJzIQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyMC0wNi0xMVQxMToyNTo1MCswMDowMH-vy50AAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAAAElFTkSuQmCC" data-src="https://cdn.midasbuy.com/images/2880X600_PUBGM_Cashback%20Carnivalabf99006.jpg" alt="img" cr="banner" width="auto">
+                    </div>
+                </a>
+            </div>
+            
+            
+            <div class="swiper-slide">
+                <a class="banner-link" href="pubgm?lan=en.html">
+                    <div class="img-box">
+                        <img class="banner-pic" src="images/CEBvZUzoFYvFYrFYLBaLxWKxWCz+OkvmAWHcq1PMAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDIwLTA2LTExVDExOjI1OjUwKzAwOjAwDrJzIQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyMC0wNi0xMVQxMToyNTo1MCswMDowMH-vy50AAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAAAElFTkSuQmCC" data-src="https://cdn.midasbuy.com/images/homepage_2880_600_en76b908cd.jpg" alt="img" cr="banner" width="auto">
+                    </div>
+                </a>
+            </div>
+             
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"></div>
+        <!-- Add Navigation -->
+        <div class="swiper-button-prev swiper-button-white" cr="banner_left"></div>
+        <div class="swiper-button-next swiper-button-white" cr="banner_right"></div>
+        <img class="mc l-mc" src="images/banner-mc-left.png" alt="img">
+        <img class="mc r-mc" src="images/banner-mc-right.png" alt="img">
+    </div>
+    
+</div>
+
+<script type="application/javascript">
+    var loadImages = function() {
+        // NodeList &#22312; IE10 &#20197;&#19979;&#27809;&#26377; forEach &#26041;&#27861;&#65292;&#22312;&#27492; Polyfill
+        if (window.NodeList && !NodeList.prototype.forEach) {
+            NodeList.prototype.forEach = Array.prototype.forEach;
+        }
+        
+        // banner &#22270;&#29255;&#25042;&#21152;&#36733;
+        var bannerImg = [{"title":"S19","desc":"","url":"https://cdn.midasbuy.com/images/yingyongd7106f61.jpg","href":"https://www.midasbuy.com/midasbuy/ot/shop/undefined?from=__mds_buy_banner.homepage","start":"2021-05-17 10:00:00+0800","end":"2021-07-14 00:00:00+0800"},{"title":"Ins&#20851;&#27880;&#25277;&#22870;&#65288;5-6&#26376;&#65289;","desc":"","url":"https://cdn.midasbuy.com/images/1440_30084385d12.jpg","href":"https://www.instagram.com/p/COscNh-HWQ7/","start":"2021-05-11 15:04:10+0800","end":"2021-07-05 00:00:00+0800"},{"title":"Twitter&#20851;&#27880;&#25277;&#22870;&#65288;5-6&#26376;&#65289;","desc":"","url":"https://cdn.midasbuy.com/images/Midasbuy-Twitter%E5%AE%A3%E4%BC%A0_2880x600_210331767ae73d.jpg","href":"https://twitter.com/Midasbuyglobal/status/1377167575184896002","start":"2021-05-11 14:58:09+0800","end":"2021-06-30 00:00:00+0800"},{"title":"razer 10% cashback carnival","desc":"","url":"https://cdn.midasbuy.com/images/2880X600_PUBGM_Cashback%20Carnivalabf99006.jpg","href":"https://www.midasbuy.com/midasbuy/ot/buy/pubgm","start":"2021-05-02 10:00:00+0800","end":"2021-05-20 23:59:59+0800"},{"title":"registration","desc":"","url":"https://cdn.midasbuy.com/images/homepage_2880_600_en76b908cd.jpg","href":"https://www.midasbuy.com/events/register/pubgm?lan=en","start":"2021-04-16 17:36:58+0800","end":"2021-08-14 00:00:00+0800"}];        
+        var imgEL = document.querySelectorAll('.banner-pic');
+
+        imgEL.forEach(function(item) {
+            var src = item.getAttribute('data-src');
+            item.src = src;
+        })
+    }
+    var getInfoAsap = window.langResource.getInfoAsap;
+    if (getInfoAsap) {
+        $('.banner-wrap .main .aspa-info').html(getInfoAsap.replace('{0}', '<a href="" cr="facebookpage" style="color: #3A7BFC" target="_blank"> Facebook '));
+    } else {
+        $('.banner-wrap .main .aspa-info').html('Follow us on <a href="" cr="facebookpage" style="color: #3A7BFC" target="_blank"> Facebook  for more information.');
+    }
+</script>
+
+<style>
+    /* &#20860;&#23481;facebook&#28857;&#36190; */
+ 
+    .content .desc .fb-follow {
+        display: inline-block;
+        margin: 0 9px;
+    }
+    @media screen and (max-width: 768px) {
+        .content .hot-game-title .fb-follow {
+            display: inline-block;
+            margin: 2px 9px 0;
+        } 
+    }
+</style>
+<div id="appIndex" class="content">
+    <div class="main">
+        
+        <div class="section hot-game">
+            <div class="title-box">
+                <h2 class="hot-game-title">
+                    <span>Popular games</span>
+                    <!-- 
+                        
+                            <a href="https://www.facebook.com/midasbuy" target="_blank" class="subscribe xsubscribe">
+                                <p class="p" cr="subscribe">Follow</p><p class="ps">+</p>
+                            </a>
+                         
+                     -->
+                </h2>
+                
+                <div class="desc" id="desc">
+                    <div class="text" id="text"><p class="aspa-info"></p></div>
+                    
+                        <a href="https://www.facebook.com/midasbuy" target="_blank" class="subscribe">
+                            <p class="p" cr="subscribe">Follow</p><p class="ps">+</p>
+                        </a>
+                     
+                </div>
+                
+            </div>
+            <div class="list-box">
+                <ul>
+                    
+                    
+                    <li class="list">
+                        <a cr="topup.1450015065" href="pubgm.html">
+                            
+                            <div class="type-label" limit="12">HOT</div>
+                            
+                            <div class="pic">
+                                <img src="images/images-%E4%B8%9A%E5%8A%A1%E5%85%A5%E5%8F%A3e813fefc.png" alt="img">
+                            </div>
+                            <div class="mask"></div>
+                            
+                            <!--<div class="text">PUBG_&#20840;&#29699;&#29256;</div>-->
+                           
+                           <span class="btn">GO</span>
+                       </a>
+                   </li>
+                   
+               </ul>
+           </div>
+       </div>
+       
+       
+        <div v-if="fbSocial.show" class="section us-facebook" v-cloak>
+            <div class="title-box">
+                <h2> {{ lanRes.facebookSocial }} </h2>
+            </div>
+            <div class="fb-page" :data-href="fbSocial.href || 'https://www.facebook.com/midasbuy'" data-width="500" data-lazy="true" data-hide-cta="true"></div>
+        </div>
+   </div>
+</div>
+<div class="footer" style="">
+    <div class="main">
+        <div class="t">
+            <div class="left">
+                
+                    <p class="label">Follow us on</p>
+                    <div class="p-box g-clr">
+                        <div class="box">
+                            
+                                <div class="on-list">
+                                    <a target="_blank" href="https://www.facebook.com/midasbuy/">
+                                        <img class="default" src="images/footer-footer-fb.png" alt="img">
+                                        <img class="hover" src="images/footer-footer-fb-hover.png" alt="img">
+                                    </a>
+                                </div>
+                            
+                                <div class="on-list">
+                                    <a target="_blank" href="https://twitter.com/Midasbuyglobal">
+                                        <img class="default" src="images/footer-footer-twitter.png" alt="img">
+                                        <img class="hover" src="images/footer-footer-twitter-hover.png" alt="img">
+                                    </a>
+                                </div>
+                            
+                                <div class="on-list">
+                                    <a target="_blank" href="https://www.instagram.com/midasbuy_top_up/">
+                                        <img class="default" src="images/footer-footer-ins.png" alt="img">
+                                        <img class="hover" src="images/footer-footer-ins-hover.png" alt="img">
+                                    </a>
+                                </div>
+                            
+                                <div class="on-list">
+                                    <a target="_blank" href="https://www.youtube.com/channel/UCVP9bUAXwBkYHcLHBA71zng">
+                                        <img class="default" src="images/footer-footer-youtube.png" alt="img">
+                                        <img class="hover" src="images/footer-footer-youtube-hover.png" alt="img">
+                                    </a>
+                                </div>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+            <div class="right">
+                <p class="label">
+                    
+                </p>
+                <div class="p-box g-clr">
+                    <div class="box">
+                        <p class="p">
+                            For customer service 
+                        </p>
+                        <p class="p">
+                            Please send email to help@midasbuy.com
+                        </p>
+                    </div>
+                    
+                        <a href="mailto:help@midasbuy.com" class="feeedback" cr="feedback">
+                            Feedback
+                        </a>
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <div class="b">
+            <ul class="link">
+                <li><a href="javascript:;.html" class="cookie-agreement" id="cookieBtn">
+                        Cookie Perferences
+                    </a></li>
+                <li><a href="terms.html" target="_blank">
+                        Terms of Service
+                    </a></li>
+                <li><a href="privacy.html" target="_blank">
+                        Privacy Policy
+                    </a></li>
+            </ul>
+            <p class="copying">
+                COPYRIGHT &copy; HIGH MORALE DEVELOPMENTS LTD. ALL RIGHTS RESERVED.
+            </p>
+        </div>
+    </div>
+</div>
+<div class="record-detailt-pop cookie-agreement-pop" id="cookie-agreement-pop">
+    <div class="pop-title clear-border"><p>YOUR COOKIE PREFERENCES</p></div>
+    <div class="detailt-box">
+        <div class="block">
+            <div class="block-title"><p></p></div>
+            <p class="block-desc"></p>
+        </div>
+        <p class="txt-one">
+            We use cookies that are necessary to provide the service and also other cookies, including third-party cookies for performance and analysis. For more information on our cookie policy, please click here.    </p>
+        <div class="block">
+            <div class="block-title"><p>Necessary Cookies</p></div>
+            <p class="block-desc">These cookies are necessary to provide you with the service and to use some of its features, such as to facilitate transactions.</p>
+        </div>
+        <div class="block">
+            <div class="block-title">
+                <p>Analytics Cookies</p>
+                <div class="switch-box">
+                    <span id="gaStatus"></span>
+                    <div class="switch-btn" id="cookieSwitchBtn">
+                        <em></em>
+                    </div>
+                </div>
+            </div>
+            <p class="block-desc">These cookies are used to measure and analyse how the service is accessed, used, or is performing in order to provide you with a better   user experience and to maintain, operate and continually improve the service.</p>
+        </div>
+        <div class="block">
+            <div class="block-title"><p></p></div>
+            <p class="block-desc"></p>
+        </div>
+        <div class="block">
+            <div class="block-title"><p></p></div>
+            <p class="block-desc"></p>
+        </div>
+    </div>
+    <div class="bottom-zz-bg">
+        <div class="pop-btn" id="cookieCloseBtn">Save and close</div>
+    </div>
+</div>
+
+</div>
+<script>
+    //&#30417;&#21548;&#28378;&#21160;&#20572;&#27490;
+    var scrollT1 = 0;
+    var scrollT2 = 0;
+	var scrollTimer = null;
+    var setPosition = function(isBottom){
+        if(isBottom){
+            if(setPosition.isBottom){ return; }
+        
+            $('.pay-sec,.wrap').addClass('pay-sec-flex');
+            $('.pay-sec').show();
+            $('.footer').addClass('show').show();
+            setPosition.isBottom = 1;
+
+        }else{
+            // if(!setPosition.isBottom){ return; }
+            $('.pay-sec,.wrap').removeClass('pay-sec-flex');
+            $('.footer').removeClass('show');
+            setPosition.isBottom = 0;
+        }       
+    }
+    window.showClauseBg = function() {
+        $('.clause-bg').show(); 
+        $('.clause-box-pop').show(); 
+    }
+    window.hideClauseBg = function() {
+        $('.clause-box-pop').hide();
+        setTimeout(function () {
+            $('.clause-bg').fadeOut();                
+        }, 100)
+    }
+    window.hideTaxPop = function() {
+        $('.taxes-bg').fadeOut();
+        $('.taxes-box-pop').fadeOut();
+    }
+    window.showBirthBox = function() {
+            $('#birthBox').show();
+            $('body').css({'overflow':'hidden'});
+        };
+
+   window.hideBirthBox = function() {
+            $('#birthBox').hide();
+            $('body').css({'overflow':'auto'});
+        };
+    function isScrollEnd() {
+        scrollT2 = $(document).scrollTop();
+        if(scrollT2 == scrollT1){
+			$('.follow').removeClass('scrollStar')
+            clearTimeout(scrollTimer)
+        }
+	}
+    $(function() {
+         if ($(window).innerHeight() > $(document).height()) {            
+           setPosition(1);
+        } else {
+            $(window).on("scroll",throttle(function () {    
+                var docHeight = $(document).height();
+                if($('.wrap').hasClass('pay-sec-flex')) {
+                    if($(window).width() <= 768){
+                        docHeight = docHeight * 1 - 120;
+                    }else{
+                        docHeight = docHeight * 1 - 180;
+                    }
+                }
+                var isBottom = Math.ceil($(window).scrollTop() + window.innerHeight) >= docHeight;
+                setPosition(isBottom);
+                // &#31227;&#21160;&#31471;FB&#28857;&#36190;&#22788;&#29702;
+                clearTimeout(scrollTimer)
+                $('.follow').addClass('scrollStar')
+                scrollTimer = setTimeout(isScrollEnd, 100)
+                scrollT1 = $(document).scrollTop()
+            },200));
+        }
+
+
+        $('.clause-bg,.clause-box-pop .close').on('click', function () {
+            window.hideClauseBg();
+        });
+    });    
+
+</script>
+<script src="js/js-index.cf75ebd8.js"></script>
+
+<script type="text/javascript">
+    var fbgamedesc = window.langResource.fbgamedesc;
+    if (fbgamedesc) {
+        $('.main .hot-game .aspa-info').html(fbgamedesc.replace('{0}', '<a href="https://www.facebook.com/midasbuy" cr="facebookpage" style="color: #3A7BFC" target="_blank"> Facebook '));
+    } else {
+        $('.main .hot-game .aspa-info').html('Follow us on <a href="https://www.facebook.com/midasbuy" cr="facebookpage" style="color: #3A7BFC" target="_blank"> Facebook  for more information.');
+    }
+   report.view('homepage');
+   report.setPage('homepage');
+   report.performance('homepage');
+</script>
+</body></html>

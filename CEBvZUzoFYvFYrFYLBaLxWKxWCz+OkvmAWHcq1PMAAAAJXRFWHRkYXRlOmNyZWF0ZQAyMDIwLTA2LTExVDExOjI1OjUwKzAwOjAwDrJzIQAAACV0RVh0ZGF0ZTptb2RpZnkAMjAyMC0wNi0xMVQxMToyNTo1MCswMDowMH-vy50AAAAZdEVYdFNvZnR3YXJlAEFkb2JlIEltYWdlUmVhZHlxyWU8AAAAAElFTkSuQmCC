@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>腾讯Midas</title>
+<link href="https://imgcache.qq.com/bossweb/pay/prop_app/css/skin01.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+   <div class="dialog_content">
+            <div class="tips">
+                <div class="about_word">
+                    <span class="about_word_warn"></span>
+                    <h5>页面访问错误</h5>
+                    <p>抱歉，找不到您要的页面，返回再看看吧。</p>
+                </div>
+           </div>
+   </div>
+</body>
+</html>
